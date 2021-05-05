@@ -1,0 +1,998 @@
+[2021-05-02 16:08:26] Welcome!
+[2021-05-02 16:08:26] Logger started, logging into `/Users/tvarusai/Documents/Personal/Self_Learn/Pets/OmniPath/pypath_log/pypath-5t8h4.log`.
+[2021-05-02 16:08:26] Session `5t8h4` started.
+[2021-05-02 16:08:26] [pypath] 
+	- session ID: `5t8h4`
+	- working directory: `/Users/tvarusai/Documents/Personal/Self_Learn/Pets/OmniPath`
+	- logfile: `/Users/tvarusai/Documents/Personal/Self_Learn/Pets/OmniPath/pypath_log/pypath-5t8h4.log`
+	- pypath version: 0.11.39
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `HI-III` in set `interaction_deprecated`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `Vidal HI-III` in set `interaction_deprecated`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `HI-III` in set `interaction_deprecated`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `HumanSignalingNetwork` in set `interaction_deprecated`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `Negatome` in set `negative`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `SignaLink2` in set `obsolate`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `NCI-PID` in set `obsolate`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `Laudanna-effects` in set `pathway_bad`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `Laudanna-directions` in set `pathway_bad`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `SIGNOR` in set `small_molecule_protein`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `ORegAnno` in set `transcription_deprecated`.
+[2021-05-02 16:08:28] [network_resources] Could not find data model for resource `DoRothEA` in set `transcription_dorothea_old`.
+[2021-05-02 16:08:28] [omnipath.init] Welcome to the OmniPath database manager app.
+[2021-05-02 16:08:28] [omnipath.init] You can customize the database building process by setting parameters in the `OP_DB_ARGS` global variable or by calling `init` again with keyword arguments or after setting values in
+                      the `pypath.share.settings` module.You can define your own databases following the examples in `pypath/omnipath/databases/builtins.json`. See more details in
+                      `pypath/omnipath/databases/db_template.json` and the code of method `pypath.omnipath.app.DatabaseManager.load_dataset`.
+[2021-05-02 16:08:28] [omnipath.dbmanager] Pickle directory: `/Users/tvarusai/.pypath/pickles` (exists: yes).
+[2021-05-02 16:08:28] [omnipath.dbmanager] Tables directory: `omnipath_tables/20210502` (exists: no).
+[2021-05-02 16:08:28] [omnipath.dbmanager] Figures directory: `omnipath_figures/20210502` (exists: no).
+[2021-05-02 16:08:28] [omnipath.dbmanager] The OmniPath database manager has been initialized.
+[2021-05-02 16:08:28] [network] Creating network object.
+[2021-05-02 16:08:28] [network] Loading network data from resource `TRIP`.
+[2021-05-02 16:08:28] [network] Reading network data from `TRIP`.
+[2021-05-02 16:08:28] [network] Expanding complexes for `TRIP`: False
+[2021-05-02 16:08:28] [inputs] Selecting input method (step 1): module `trip.trip_interactions`, method `None`.
+[2021-05-02 16:08:28] [inputs] Selecting input method (step 2): module `pypath.inputs.trip`, method `trip_interactions`.
+[2021-05-02 16:08:28] [inputs] Importing module `pypath.inputs.trip`.
+[2021-05-02 16:08:28] [network] Retrieving data by method `trip_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:28] [inputs.trip] Loading preprocessed TRIP database content from `/Users/tvarusai/.pypath/cache/trip_preprocessed.pickle`
+[2021-05-02 16:08:28] [network] `TRIP` must have references: True
+[2021-05-02 16:08:28] [inputs] Selecting input method (step 1): module `uniprot.get_uniprot_sec`, method `None`.
+[2021-05-02 16:08:28] [inputs] Selecting input method (step 2): module `pypath.inputs.uniprot`, method `get_uniprot_sec`.
+[2021-05-02 16:08:28] [inputs] Importing module `pypath.inputs.uniprot`.
+[2021-05-02 16:08:28] [mapping] Loading mapping table for organism `9606` with identifiers `uniprot-sec` and `uniprot-pri`, input type `file`
+[2021-05-02 16:08:28] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=uniprot-sec, id_b=uniprot-pri, load_a_to_b=1, load_b_to_a=0, input_type=file (FileMapping)`.
+[2021-05-02 16:08:28] [mapping] Loading `uniprot-sec` to `uniprot-pri` mapping table from pickle file `/Users/tvarusai/.pypath/cache/8618b4c1fa04b16856d00c7f138b15fa`.
+[2021-05-02 16:08:28] [mapping] `uniprot-sec` to `uniprot-pri` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:28] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol` and `trembl`, input type `uniprot`
+[2021-05-02 16:08:28] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol, id_b=trembl, load_a_to_b=0, load_b_to_a=1, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:29] [mapping] Loading `genesymbol` to `trembl` mapping table from pickle file `/Users/tvarusai/.pypath/cache/dc62e2856a58d606db52bd0298666bfd`.
+[2021-05-02 16:08:29] [mapping] `trembl` to `genesymbol` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:29] [uniprot_input] Loading list of all UniProt IDs for organism `9606` (only SwissProt: None).
+[2021-05-02 16:08:29] [curl] Creating Curl object to retrieve data from `https://www.uniprot.org/uniprot/`
+[2021-05-02 16:08:29] [curl] GET parameters added to the URL: `query=organism%3A9606&format=tab&columns=id`
+[2021-05-02 16:08:29] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/582ab5c0b5fffa42fb3e8d1757901ea1-`
+[2021-05-02 16:08:29] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:29] [curl] Loading data from cache previously downloaded from `www.uniprot.org`
+[2021-05-02 16:08:29] [curl] Opening file `/Users/tvarusai/.pypath/cache/582ab5c0b5fffa42fb3e8d1757901ea1-`
+[2021-05-02 16:08:29] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:29] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/582ab5c0b5fffa42fb3e8d1757901ea1-`.
+[2021-05-02 16:08:29] [curl] Contents of `/Users/tvarusai/.pypath/cache/582ab5c0b5fffa42fb3e8d1757901ea1-` has been read and the file has been closed.
+[2021-05-02 16:08:29] [curl] File at `https://www.uniprot.org/uniprot/?query=organism%3A9606&format=tab&columns=id` successfully retrieved. Resulted file type `plain text, unicode string`. Local file at
+                      `/Users/tvarusai/.pypath/cache/582ab5c0b5fffa42fb3e8d1757901ea1-`.
+[2021-05-02 16:08:29] [network] 391 lines have been read from trip.trip_interactions, 370 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered by taxon filters.
+[2021-05-02 16:08:29] [network] Loops allowed for resource `TRIP`: False
+[2021-05-02 16:08:29] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:29] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:29] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol, id_b=uniprot, load_a_to_b=0, load_b_to_a=1, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:29] [mapping] Loading `genesymbol` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/b400f7b19ec3edf5f3637482993dbbbb`.
+[2021-05-02 16:08:29] [mapping] `uniprot` to `genesymbol` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:29] [network] New network resource added, current number of nodes: 212, edges: 339.
+[2021-05-02 16:08:29] [network] Loop edges discarded: 0
+[2021-05-02 16:08:29] [network] Checking organisms. 212 nodes and 339 interactions before.
+[2021-05-02 16:08:29] [reflists] ReferenceListManager has been created.
+[2021-05-02 16:08:29] [reflists] Reference list for ID type `uniprot` for organism `9606` has been loaded from `/Users/tvarusai/.pypath/cache/reflist_uniprot_9606.pickle`.
+[2021-05-02 16:08:29] [network] Finished checking organisms. 0 nodes have been removed, 212 nodes and 339 interactions remained.
+[2021-05-02 16:08:29] [network] Removing zero degree nodes. 212 nodes and 339 interactions before.
+[2021-05-02 16:08:29] [network] Finished removing zero degree nodes. 0 nodes have been removed, 212 nodes and 339 interactions remained.
+[2021-05-02 16:08:29] [network] Completed: loading network data from resource `TRIP`.
+[2021-05-02 16:08:29] [network] Loading network data from resource `SPIKE`.
+[2021-05-02 16:08:29] [network] Reading network data from `SPIKE`.
+[2021-05-02 16:08:29] [network] Expanding complexes for `SPIKE`: False
+[2021-05-02 16:08:29] [inputs] Selecting input method (step 1): module `spike.spike_interactions`, method `None`.
+[2021-05-02 16:08:29] [inputs] Selecting input method (step 2): module `pypath.inputs.spike`, method `spike_interactions`.
+[2021-05-02 16:08:29] [inputs] Importing module `pypath.inputs.spike`.
+[2021-05-02 16:08:29] [network] Retrieving data by method `spike_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:29] [curl] Creating Curl object to retrieve data from `http://www.cs.tau.ac.il/~spike/download/LatestSpikeDB.xml.zip`
+[2021-05-02 16:08:29] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/da5f2fa9bc0a975c375ed43448233ece-LatestSpikeDB.xml.zip`
+[2021-05-02 16:08:29] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:29] [curl] Loading data from cache previously downloaded from `www.cs.tau.ac.il`
+[2021-05-02 16:08:29] [curl] Opening file `/Users/tvarusai/.pypath/cache/da5f2fa9bc0a975c375ed43448233ece-LatestSpikeDB.xml.zip`
+[2021-05-02 16:08:29] [curl] Extracting data from file type `zip`
+[2021-05-02 16:08:29] [curl] Opening zip file `/Users/tvarusai/.pypath/cache/da5f2fa9bc0a975c375ed43448233ece-LatestSpikeDB.xml.zip`.
+[2021-05-02 16:08:29] [curl] File at `http://www.cs.tau.ac.il/~spike/download/LatestSpikeDB.xml.zip` successfully retrieved. Resulted file type `zip extracted data, dict of file objects`. Local file at
+                      `/Users/tvarusai/.pypath/cache/da5f2fa9bc0a975c375ed43448233ece-LatestSpikeDB.xml.zip`.
+[2021-05-02 16:08:31] [network] `SPIKE` must have references: True
+[2021-05-02 16:08:32] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:32] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:32] [mapping] Loading `genesymbol` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/6304c14c82f78e7197c553533f4bbad4`.
+[2021-05-02 16:08:32] [mapping] `genesymbol` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:32] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol-syn` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:32] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol-syn, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:32] [mapping] Loading `genesymbol-syn` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/8fc8d653b0dab607d2c6a66e8ec3663a`.
+[2021-05-02 16:08:32] [mapping] `genesymbol-syn` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:32] [network] 3840 lines have been read from spike.spike_interactions, 3683 links after mapping; 0 lines filtered by filters; 7 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:32] [network] Loops allowed for resource `SPIKE`: False
+[2021-05-02 16:08:32] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:32] [network] New network resource added, current number of nodes: 1953, edges: 3577.
+[2021-05-02 16:08:32] [network] Loop edges discarded: 27
+[2021-05-02 16:08:32] [network] Checking organisms. 1953 nodes and 3577 interactions before.
+[2021-05-02 16:08:32] [network] Finished checking organisms. 0 nodes have been removed, 1953 nodes and 3577 interactions remained.
+[2021-05-02 16:08:32] [network] Removing zero degree nodes. 1953 nodes and 3577 interactions before.
+[2021-05-02 16:08:32] [network] Finished removing zero degree nodes. 0 nodes have been removed, 1953 nodes and 3577 interactions remained.
+[2021-05-02 16:08:32] [network] Completed: loading network data from resource `SPIKE`.
+[2021-05-02 16:08:32] [network] Loading network data from resource `SignaLink3`.
+[2021-05-02 16:08:32] [network] Reading network data from `SignaLink3`.
+[2021-05-02 16:08:32] [network] Expanding complexes for `SignaLink3`: False
+[2021-05-02 16:08:32] [inputs] Selecting input method (step 1): module `signalink.signalink_interactions`, method `None`.
+[2021-05-02 16:08:32] [inputs] Selecting input method (step 2): module `pypath.inputs.signalink`, method `signalink_interactions`.
+[2021-05-02 16:08:32] [inputs] Importing module `pypath.inputs.signalink`.
+[2021-05-02 16:08:32] [network] Retrieving data by method `signalink_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:32] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/SLK3_nodes_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/5812e30a0a40b39e9e8260b7de575e16-SLK3_nodes_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:32] [curl] Loading data from cache previously downloaded from `rescued.omnipathdb.org`
+[2021-05-02 16:08:32] [curl] Opening file `/Users/tvarusai/.pypath/cache/5812e30a0a40b39e9e8260b7de575e16-SLK3_nodes_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:32] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/5812e30a0a40b39e9e8260b7de575e16-SLK3_nodes_2020_03_23.csv`.
+[2021-05-02 16:08:32] [curl] File at `http://rescued.omnipathdb.org/SLK3_nodes_2020_03_23.csv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/5812e30a0a40b39e9e8260b7de575e16-SLK3_nodes_2020_03_23.csv`.
+[2021-05-02 16:08:32] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/SLK3_layer0_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/75cf98bbbe61af6124bee00011721ae2-SLK3_layer0_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:32] [curl] Loading data from cache previously downloaded from `rescued.omnipathdb.org`
+[2021-05-02 16:08:32] [curl] Opening file `/Users/tvarusai/.pypath/cache/75cf98bbbe61af6124bee00011721ae2-SLK3_layer0_2020_03_23.csv`
+[2021-05-02 16:08:32] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:32] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/75cf98bbbe61af6124bee00011721ae2-SLK3_layer0_2020_03_23.csv`.
+[2021-05-02 16:08:32] [curl] File at `http://rescued.omnipathdb.org/SLK3_layer0_2020_03_23.csv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/75cf98bbbe61af6124bee00011721ae2-SLK3_layer0_2020_03_23.csv`.
+[2021-05-02 16:08:33] [network] `SignaLink3` must have references: True
+[2021-05-02 16:08:33] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol` and `swissprot`, input type `uniprot`
+[2021-05-02 16:08:33] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol, id_b=swissprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:33] [mapping] Loading `genesymbol` to `swissprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/bef25600732edbb58297177630bc4e4b`.
+[2021-05-02 16:08:33] [mapping] `genesymbol` to `swissprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:33] [mapping] Loading mapping table for organism `9606` with identifiers `genesymbol-syn` and `swissprot`, input type `uniprot`
+[2021-05-02 16:08:33] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=genesymbol-syn, id_b=swissprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:33] [mapping] Loading `genesymbol-syn` to `swissprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/942b4f8de2d2922d0161b6fadc505d31`.
+[2021-05-02 16:08:33] [mapping] `genesymbol-syn` to `swissprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:33] [network] 1937 lines have been read from signalink.signalink_interactions, 1803 links after mapping; 136 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:33] [network] Loops allowed for resource `SignaLink3`: False
+[2021-05-02 16:08:33] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:33] [network] New network resource added, current number of nodes: 2402, edges: 5126.
+[2021-05-02 16:08:33] [network] Loop edges discarded: 1
+[2021-05-02 16:08:33] [network] Checking organisms. 2402 nodes and 5126 interactions before.
+[2021-05-02 16:08:33] [network] Finished checking organisms. 0 nodes have been removed, 2402 nodes and 5126 interactions remained.
+[2021-05-02 16:08:33] [network] Removing zero degree nodes. 2402 nodes and 5126 interactions before.
+[2021-05-02 16:08:33] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2402 nodes and 5126 interactions remained.
+[2021-05-02 16:08:33] [network] Completed: loading network data from resource `SignaLink3`.
+[2021-05-02 16:08:33] [network] Loading network data from resource `Guide2Pharma`.
+[2021-05-02 16:08:33] [network] Reading network data from `Guide2Pharma`.
+[2021-05-02 16:08:33] [network] Expanding complexes for `Guide2Pharma`: False
+[2021-05-02 16:08:33] [inputs] Selecting input method (step 1): module `guide2pharma_interactions`, method `None`.
+[2021-05-02 16:08:33] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `guide2pharma_interactions`.
+[2021-05-02 16:08:33] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:33] [network] Retrieving data by method `guide2pharma_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:33] [curl] Creating Curl object to retrieve data from `http://www.guidetopharmacology.org/DATA/interactions.csv`
+[2021-05-02 16:08:33] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/61ddc6eb0ff8ef877c52f5d1a81b9db2-interactions.csv`
+[2021-05-02 16:08:33] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:33] [curl] Loading data from cache previously downloaded from `www.guidetopharmacology.org`
+[2021-05-02 16:08:33] [curl] Opening file `/Users/tvarusai/.pypath/cache/61ddc6eb0ff8ef877c52f5d1a81b9db2-interactions.csv`
+[2021-05-02 16:08:33] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:33] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/61ddc6eb0ff8ef877c52f5d1a81b9db2-interactions.csv`.
+[2021-05-02 16:08:33] [curl] File at `http://www.guidetopharmacology.org/DATA/interactions.csv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/61ddc6eb0ff8ef877c52f5d1a81b9db2-interactions.csv`.
+[2021-05-02 16:08:33] [curl] Creating Curl object to retrieve data from `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt`
+[2021-05-02 16:08:33] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:08:33] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:33] [curl] Loading data from cache previously downloaded from `ftp.uniprot.org`
+[2021-05-02 16:08:33] [curl] Opening file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:08:33] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:33] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:08:33] [curl] File at `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:08:34] [network] `Guide2Pharma` must have references: True
+[2021-05-02 16:08:34] [network] 2609 lines have been read from guide2pharma_interactions, 2080 links after mapping; 0 lines filtered by filters; 499 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:34] [network] Loops allowed for resource `Guide2Pharma`: False
+[2021-05-02 16:08:34] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:34] [network] New network resource added, current number of nodes: 2633, edges: 5397.
+[2021-05-02 16:08:34] [network] Loop edges discarded: 0
+[2021-05-02 16:08:34] [network] Checking organisms. 2633 nodes and 5397 interactions before.
+[2021-05-02 16:08:34] [network] Finished checking organisms. 0 nodes have been removed, 2633 nodes and 5397 interactions remained.
+[2021-05-02 16:08:34] [network] Removing zero degree nodes. 2633 nodes and 5397 interactions before.
+[2021-05-02 16:08:34] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2633 nodes and 5397 interactions remained.
+[2021-05-02 16:08:34] [network] Completed: loading network data from resource `Guide2Pharma`.
+[2021-05-02 16:08:34] [network] Loading network data from resource `CA1`.
+[2021-05-02 16:08:34] [network] Reading network data from `CA1`.
+[2021-05-02 16:08:34] [network] Expanding complexes for `CA1`: False
+[2021-05-02 16:08:34] [inputs] Selecting input method (step 1): module `get_ca1`, method `None`.
+[2021-05-02 16:08:34] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `get_ca1`.
+[2021-05-02 16:08:34] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:34] [network] Retrieving data by method `get_ca1` of the pypath.inputs module...
+[2021-05-02 16:08:34] [curl] Creating Curl object to retrieve data from `http://science.sciencemag.org/highwire/filestream/586741/field_highwire_adjunct_files/1/Maayan_SOM_External_Files.zip`
+[2021-05-02 16:08:34] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/a221dcf8846ad398634f9997a1011b9e-Maayan_SOM_External_Files.zip`
+[2021-05-02 16:08:34] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:34] [curl] Loading data from cache previously downloaded from `science.sciencemag.org`
+[2021-05-02 16:08:34] [curl] Opening file `/Users/tvarusai/.pypath/cache/a221dcf8846ad398634f9997a1011b9e-Maayan_SOM_External_Files.zip`
+[2021-05-02 16:08:34] [curl] Extracting data from file type `zip`
+[2021-05-02 16:08:34] [curl] Opening zip file `/Users/tvarusai/.pypath/cache/a221dcf8846ad398634f9997a1011b9e-Maayan_SOM_External_Files.zip`.
+[2021-05-02 16:08:34] [curl] Data has been read from zip file `/Users/tvarusai/.pypath/cache/a221dcf8846ad398634f9997a1011b9e-Maayan_SOM_External_Files.zip`.File has been closed
+[2021-05-02 16:08:34] [curl] File at `http://science.sciencemag.org/highwire/filestream/586741/field_highwire_adjunct_files/1/Maayan_SOM_External_Files.zip` successfully retrieved. Resulted file type `zip extracted data,
+                      dict of unicode strings`. Local file at `/Users/tvarusai/.pypath/cache/a221dcf8846ad398634f9997a1011b9e-Maayan_SOM_External_Files.zip`.
+[2021-05-02 16:08:34] [network] `CA1` must have references: True
+[2021-05-02 16:08:34] [network] 1786 lines have been read from get_ca1, 1418 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered by taxon filters.
+[2021-05-02 16:08:34] [network] Loops allowed for resource `CA1`: False
+[2021-05-02 16:08:34] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:35] [network] New network resource added, current number of nodes: 2821, edges: 6265.
+[2021-05-02 16:08:35] [network] Loop edges discarded: 0
+[2021-05-02 16:08:35] [network] Checking organisms. 2821 nodes and 6265 interactions before.
+[2021-05-02 16:08:35] [network] Finished checking organisms. 0 nodes have been removed, 2821 nodes and 6265 interactions remained.
+[2021-05-02 16:08:35] [network] Removing zero degree nodes. 2821 nodes and 6265 interactions before.
+[2021-05-02 16:08:35] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2821 nodes and 6265 interactions remained.
+[2021-05-02 16:08:35] [network] Completed: loading network data from resource `CA1`.
+[2021-05-02 16:08:35] [network] Loading network data from resource `ARN`.
+[2021-05-02 16:08:35] [network] Reading network data from `ARN`.
+[2021-05-02 16:08:35] [network] Expanding complexes for `ARN`: False
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 1): module `arn_interactions`, method `None`.
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `arn_interactions`.
+[2021-05-02 16:08:35] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:35] [network] Retrieving data by method `arn_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/arn_curated.csv`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/2a3df95ffe0c1f582424a7df8a47f26d-arn_curated.csv`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/2a3df95ffe0c1f582424a7df8a47f26d-arn_curated.csv`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/2a3df95ffe0c1f582424a7df8a47f26d-arn_curated.csv` has been read and the file has been closed.
+[2021-05-02 16:08:35] [network] `ARN` must have references: True
+[2021-05-02 16:08:35] [network] 94 lines have been read from arn_interactions, 95 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered by taxon filters.
+[2021-05-02 16:08:35] [network] Loops allowed for resource `ARN`: False
+[2021-05-02 16:08:35] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:35] [network] New network resource added, current number of nodes: 2828, edges: 6332.
+[2021-05-02 16:08:35] [network] Loop edges discarded: 0
+[2021-05-02 16:08:35] [network] Checking organisms. 2828 nodes and 6332 interactions before.
+[2021-05-02 16:08:35] [network] Finished checking organisms. 0 nodes have been removed, 2828 nodes and 6332 interactions remained.
+[2021-05-02 16:08:35] [network] Removing zero degree nodes. 2828 nodes and 6332 interactions before.
+[2021-05-02 16:08:35] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2828 nodes and 6332 interactions remained.
+[2021-05-02 16:08:35] [network] Completed: loading network data from resource `ARN`.
+[2021-05-02 16:08:35] [network] Loading network data from resource `NRF2ome`.
+[2021-05-02 16:08:35] [network] Reading network data from `NRF2ome`.
+[2021-05-02 16:08:35] [network] Expanding complexes for `NRF2ome`: False
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 1): module `nrf2ome_interactions`, method `None`.
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `nrf2ome_interactions`.
+[2021-05-02 16:08:35] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:35] [network] Retrieving data by method `nrf2ome_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/nrf2ome.csv`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/c4e08916da21d4644d3b9e758afb02d5-nrf2ome.csv`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/c4e08916da21d4644d3b9e758afb02d5-nrf2ome.csv`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/c4e08916da21d4644d3b9e758afb02d5-nrf2ome.csv` has been read and the file has been closed.
+[2021-05-02 16:08:35] [network] `NRF2ome` must have references: True
+[2021-05-02 16:08:35] [network] 108 lines have been read from nrf2ome_interactions, 109 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered by taxon filters.
+[2021-05-02 16:08:35] [network] Loops allowed for resource `NRF2ome`: False
+[2021-05-02 16:08:35] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:35] [network] New network resource added, current number of nodes: 2847, edges: 6431.
+[2021-05-02 16:08:35] [network] Loop edges discarded: 1
+[2021-05-02 16:08:35] [network] Checking organisms. 2847 nodes and 6431 interactions before.
+[2021-05-02 16:08:35] [network] Finished checking organisms. 0 nodes have been removed, 2847 nodes and 6431 interactions remained.
+[2021-05-02 16:08:35] [network] Removing zero degree nodes. 2847 nodes and 6431 interactions before.
+[2021-05-02 16:08:35] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2847 nodes and 6431 interactions remained.
+[2021-05-02 16:08:35] [network] Completed: loading network data from resource `NRF2ome`.
+[2021-05-02 16:08:35] [network] Loading network data from resource `Macrophage`.
+[2021-05-02 16:08:35] [network] Reading network data from `Macrophage`.
+[2021-05-02 16:08:35] [network] Expanding complexes for `Macrophage`: False
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 1): module `macrophage_interactions`, method `None`.
+[2021-05-02 16:08:35] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `macrophage_interactions`.
+[2021-05-02 16:08:35] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:35] [network] Retrieving data by method `macrophage_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://static-content.springer.com/esm/art%3A10.1186%2F1752-0509-4-63/MediaObjects/12918_2010_452_MOESM2_ESM.XLS`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/e7b73bcce14b977a3e384518d40f3637-12918_2010_452_MOESM2_ESM.XLS`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Loading data from cache previously downloaded from `static-content.springer.com`
+[2021-05-02 16:08:35] [curl] Opening file `/Users/tvarusai/.pypath/cache/e7b73bcce14b977a3e384518d40f3637-12918_2010_452_MOESM2_ESM.XLS`
+[2021-05-02 16:08:35] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/e7b73bcce14b977a3e384518d40f3637-12918_2010_452_MOESM2_ESM.XLS`.
+[2021-05-02 16:08:35] [curl] File at `https://static-content.springer.com/esm/art%3A10.1186%2F1752-0509-4-63/MediaObjects/12918_2010_452_MOESM2_ESM.XLS` successfully retrieved. Resulted file type `plain text, file object`.
+                      Local file at `/Users/tvarusai/.pypath/cache/e7b73bcce14b977a3e384518d40f3637-12918_2010_452_MOESM2_ESM.XLS`.
+[2021-05-02 16:08:35] [network] `Macrophage` must have references: True
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=http://www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`
+[2021-05-02 16:08:35] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:35] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json`.
+[2021-05-02 16:08:35] [curl] Contents of `/Users/tvarusai/.pypath/cache/239cf6301a55536b1d82e9abb846af17-www&format=json` has been read and the file has been closed.
+[2021-05-02 16:08:35] [network] 4514 lines have been read from macrophage_interactions, 4413 links after mapping; 0 lines filtered by filters; 13 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:35] [network] Loops allowed for resource `Macrophage`: False
+[2021-05-02 16:08:35] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:36] [network] New network resource added, current number of nodes: 2923, edges: 7330.
+[2021-05-02 16:08:36] [network] Loop edges discarded: 0
+[2021-05-02 16:08:36] [network] Checking organisms. 2923 nodes and 7330 interactions before.
+[2021-05-02 16:08:36] [network] Finished checking organisms. 0 nodes have been removed, 2923 nodes and 7330 interactions remained.
+[2021-05-02 16:08:36] [network] Removing zero degree nodes. 2923 nodes and 7330 interactions before.
+[2021-05-02 16:08:36] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2923 nodes and 7330 interactions remained.
+[2021-05-02 16:08:36] [network] Completed: loading network data from resource `Macrophage`.
+[2021-05-02 16:08:36] [network] Loading network data from resource `DeathDomain`.
+[2021-05-02 16:08:36] [network] Reading network data from `DeathDomain`.
+[2021-05-02 16:08:36] [network] Expanding complexes for `DeathDomain`: False
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 1): module `deathdomain.deathdomain_interactions_rescued`, method `None`.
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 2): module `pypath.inputs.deathdomain`, method `deathdomain_interactions_rescued`.
+[2021-05-02 16:08:36] [inputs] Importing module `pypath.inputs.deathdomain`.
+[2021-05-02 16:08:36] [network] Retrieving data by method `deathdomain_interactions_rescued` of the pypath.inputs module...
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/deathdomain.tsv`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/e8d5dafdf0a6f7a273ec80195eedfb58-deathdomain.tsv`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Loading data from cache previously downloaded from `rescued.omnipathdb.org`
+[2021-05-02 16:08:36] [curl] Opening file `/Users/tvarusai/.pypath/cache/e8d5dafdf0a6f7a273ec80195eedfb58-deathdomain.tsv`
+[2021-05-02 16:08:36] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/e8d5dafdf0a6f7a273ec80195eedfb58-deathdomain.tsv`.
+[2021-05-02 16:08:36] [curl] File at `http://rescued.omnipathdb.org/deathdomain.tsv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/e8d5dafdf0a6f7a273ec80195eedfb58-deathdomain.tsv`.
+[2021-05-02 16:08:36] [network] `DeathDomain` must have references: True
+[2021-05-02 16:08:36] [network] 182 lines have been read from deathdomain.deathdomain_interactions_rescued, 74 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 0 lines filtered
+                      by taxon filters.
+[2021-05-02 16:08:36] [network] Loops allowed for resource `DeathDomain`: False
+[2021-05-02 16:08:36] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:36] [network] New network resource added, current number of nodes: 2933, edges: 7357.
+[2021-05-02 16:08:36] [network] Loop edges discarded: 0
+[2021-05-02 16:08:36] [network] Checking organisms. 2933 nodes and 7357 interactions before.
+[2021-05-02 16:08:36] [network] Finished checking organisms. 0 nodes have been removed, 2933 nodes and 7357 interactions remained.
+[2021-05-02 16:08:36] [network] Removing zero degree nodes. 2933 nodes and 7357 interactions before.
+[2021-05-02 16:08:36] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2933 nodes and 7357 interactions remained.
+[2021-05-02 16:08:36] [network] Completed: loading network data from resource `DeathDomain`.
+[2021-05-02 16:08:36] [network] Loading network data from resource `PDZBase`.
+[2021-05-02 16:08:36] [network] Reading network data from `PDZBase`.
+[2021-05-02 16:08:36] [network] Expanding complexes for `PDZBase`: False
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 1): module `pdzbase_interactions`, method `None`.
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `pdzbase_interactions`.
+[2021-05-02 16:08:36] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:36] [network] Retrieving data by method `pdzbase_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `http://rescued.omnipathdb.org/PDZBase.html`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/33841b664946b5be7956c92dfd12f30f-PDZBase.html`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Loading data from cache previously downloaded from `rescued.omnipathdb.org`
+[2021-05-02 16:08:36] [curl] Opening file `/Users/tvarusai/.pypath/cache/33841b664946b5be7956c92dfd12f30f-PDZBase.html`
+[2021-05-02 16:08:36] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/33841b664946b5be7956c92dfd12f30f-PDZBase.html`.
+[2021-05-02 16:08:36] [curl] Contents of `/Users/tvarusai/.pypath/cache/33841b664946b5be7956c92dfd12f30f-PDZBase.html` has been read and the file has been closed.
+[2021-05-02 16:08:36] [curl] File at `http://rescued.omnipathdb.org/PDZBase.html` successfully retrieved. Resulted file type `plain text, unicode string`. Local file at
+                      `/Users/tvarusai/.pypath/cache/33841b664946b5be7956c92dfd12f30f-PDZBase.html`.
+[2021-05-02 16:08:36] [network] `PDZBase` must have references: True
+[2021-05-02 16:08:36] [network] 337 lines have been read from pdzbase_interactions, 112 links after mapping; 0 lines filtered by filters; 0 lines filtered because lack of references; 214 lines filtered by taxon filters.
+[2021-05-02 16:08:36] [network] Loops allowed for resource `PDZBase`: False
+[2021-05-02 16:08:36] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:36] [network] New network resource added, current number of nodes: 2995, edges: 7452.
+[2021-05-02 16:08:36] [network] Loop edges discarded: 1
+[2021-05-02 16:08:36] [network] Checking organisms. 2995 nodes and 7452 interactions before.
+[2021-05-02 16:08:36] [network] Finished checking organisms. 0 nodes have been removed, 2995 nodes and 7452 interactions remained.
+[2021-05-02 16:08:36] [network] Removing zero degree nodes. 2995 nodes and 7452 interactions before.
+[2021-05-02 16:08:36] [network] Finished removing zero degree nodes. 0 nodes have been removed, 2995 nodes and 7452 interactions remained.
+[2021-05-02 16:08:36] [network] Completed: loading network data from resource `PDZBase`.
+[2021-05-02 16:08:36] [network] Loading network data from resource `SIGNOR`.
+[2021-05-02 16:08:36] [network] Reading network data from `SIGNOR`.
+[2021-05-02 16:08:36] [network] Expanding complexes for `SIGNOR`: False
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 1): module `signor.signor_interactions`, method `None`.
+[2021-05-02 16:08:36] [inputs] Selecting input method (step 2): module `pypath.inputs.signor`, method `signor_interactions`.
+[2021-05-02 16:08:36] [inputs] Importing module `pypath.inputs.signor`.
+[2021-05-02 16:08:36] [network] Retrieving data by method `signor_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`.
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`.
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/33cb899246ae216a12acaf98e1c5653c-download_complexes.php`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/33cb899246ae216a12acaf98e1c5653c-download_complexes.php`.
+[2021-05-02 16:08:36] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_entity.php`
+[2021-05-02 16:08:36] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/a357fe979f74a823bf4a42150a6dcf33-download_entity.php`
+[2021-05-02 16:08:36] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:36] [curl] Loading data from cache previously downloaded from `signor.uniroma2.it`
+[2021-05-02 16:08:36] [curl] Opening file `/Users/tvarusai/.pypath/cache/a357fe979f74a823bf4a42150a6dcf33-download_entity.php`
+[2021-05-02 16:08:36] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:36] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/a357fe979f74a823bf4a42150a6dcf33-download_entity.php`.
+[2021-05-02 16:08:36] [curl] File at `https://signor.uniroma2.it/download_entity.php` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/a357fe979f74a823bf4a42150a6dcf33-download_entity.php`.
+[2021-05-02 16:08:37] [network] `SIGNOR` must have references: True
+[2021-05-02 16:08:37] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC7642658&format=json`
+[2021-05-02 16:08:37] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/6719984a9922756c06e12b44827837df-`
+[2021-05-02 16:08:37] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:37] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/6719984a9922756c06e12b44827837df-`.
+[2021-05-02 16:08:37] [curl] Contents of `/Users/tvarusai/.pypath/cache/6719984a9922756c06e12b44827837df-` has been read and the file has been closed.
+[2021-05-02 16:08:38] [network] 32738 lines have been read from signor.signor_interactions, 17412 links after mapping; 5639 lines filtered by filters; 703 lines filtered because lack of references; 5758 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:38] [network] Loops allowed for resource `SIGNOR`: False
+[2021-05-02 16:08:38] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:41] [network] New network resource added, current number of nodes: 4524, edges: 17154.
+[2021-05-02 16:08:41] [network] Loop edges discarded: 448
+[2021-05-02 16:08:41] [network] Checking organisms. 4524 nodes and 17154 interactions before.
+[2021-05-02 16:08:41] [network] Finished checking organisms. 0 nodes have been removed, 4524 nodes and 17154 interactions remained.
+[2021-05-02 16:08:41] [network] Removing zero degree nodes. 4524 nodes and 17154 interactions before.
+[2021-05-02 16:08:41] [network] Finished removing zero degree nodes. 0 nodes have been removed, 4524 nodes and 17154 interactions remained.
+[2021-05-02 16:08:41] [network] Completed: loading network data from resource `SIGNOR`.
+[2021-05-02 16:08:41] [network] Loading network data from resource `Adhesome`.
+[2021-05-02 16:08:41] [network] Reading network data from `Adhesome`.
+[2021-05-02 16:08:41] [network] Expanding complexes for `Adhesome`: False
+[2021-05-02 16:08:41] [inputs] Selecting input method (step 1): module `adhesome.adhesome_interactions`, method `None`.
+[2021-05-02 16:08:41] [inputs] Selecting input method (step 2): module `pypath.inputs.adhesome`, method `adhesome_interactions`.
+[2021-05-02 16:08:41] [inputs] Importing module `pypath.inputs.adhesome`.
+[2021-05-02 16:08:41] [network] Retrieving data by method `adhesome_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:41] [curl] Creating Curl object to retrieve data from `http://www.adhesome.org/interactions.csv`
+[2021-05-02 16:08:41] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/c8875518d4ba6777d8754b216752664b-interactions.csv`
+[2021-05-02 16:08:41] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:41] [curl] Loading data from cache previously downloaded from `www.adhesome.org`
+[2021-05-02 16:08:41] [curl] Opening file `/Users/tvarusai/.pypath/cache/c8875518d4ba6777d8754b216752664b-interactions.csv`
+[2021-05-02 16:08:41] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:41] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/c8875518d4ba6777d8754b216752664b-interactions.csv`.
+[2021-05-02 16:08:41] [curl] File at `http://www.adhesome.org/interactions.csv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/c8875518d4ba6777d8754b216752664b-interactions.csv`.
+[2021-05-02 16:08:41] [network] `Adhesome` must have references: True
+[2021-05-02 16:08:42] [network] 11094 lines have been read from adhesome.adhesome_interactions, 10935 links after mapping; 0 lines filtered by filters; 1 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:42] [network] Loops allowed for resource `Adhesome`: False
+[2021-05-02 16:08:42] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:43] [network] New network resource added, current number of nodes: 4576, edges: 18315.
+[2021-05-02 16:08:43] [network] Loop edges discarded: 0
+[2021-05-02 16:08:43] [network] Checking organisms. 4576 nodes and 18315 interactions before.
+[2021-05-02 16:08:43] [network] Finished checking organisms. 0 nodes have been removed, 4576 nodes and 18315 interactions remained.
+[2021-05-02 16:08:43] [network] Removing zero degree nodes. 4576 nodes and 18315 interactions before.
+[2021-05-02 16:08:43] [network] Finished removing zero degree nodes. 0 nodes have been removed, 4576 nodes and 18315 interactions remained.
+[2021-05-02 16:08:43] [network] Completed: loading network data from resource `Adhesome`.
+[2021-05-02 16:08:43] [network] Loading network data from resource `ICELLNET`.
+[2021-05-02 16:08:43] [network] Reading network data from `ICELLNET`.
+[2021-05-02 16:08:43] [network] Expanding complexes for `ICELLNET`: False
+[2021-05-02 16:08:43] [inputs] Selecting input method (step 1): module `icellnet.icellnet_interactions`, method `None`.
+[2021-05-02 16:08:43] [inputs] Selecting input method (step 2): module `pypath.inputs.icellnet`, method `icellnet_interactions`.
+[2021-05-02 16:08:43] [inputs] Importing module `pypath.inputs.icellnet`.
+[2021-05-02 16:08:43] [network] Retrieving data by method `icellnet_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:43] [network] `ICELLNET` must have references: True
+[2021-05-02 16:08:43] [curl] Creating Curl object to retrieve data from `https://www.biorxiv.org/content/biorxiv/early/2020/03/05/2020.03.05.976878/DC2/embed/media-2.xlsx?download=true`
+[2021-05-02 16:08:43] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/a545630fc01f67d22aaff86f73d96df7-media-2.xlsx`
+[2021-05-02 16:08:43] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:43] [curl] Loading data from cache previously downloaded from `www.biorxiv.org`
+[2021-05-02 16:08:43] [curl] Opening file `/Users/tvarusai/.pypath/cache/a545630fc01f67d22aaff86f73d96df7-media-2.xlsx`
+[2021-05-02 16:08:43] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:43] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/a545630fc01f67d22aaff86f73d96df7-media-2.xlsx`.
+[2021-05-02 16:08:43] [curl] File at `https://www.biorxiv.org/content/biorxiv/early/2020/03/05/2020.03.05.976878/DC2/embed/media-2.xlsx?download=true` successfully retrieved. Resulted file type `plain text, file object`.
+                      Local file at `/Users/tvarusai/.pypath/cache/a545630fc01f67d22aaff86f73d96df7-media-2.xlsx`.
+[2021-05-02 16:08:43] [network] 378 lines have been read from icellnet.icellnet_interactions, 378 links after mapping; 0 lines filtered by filters; 1 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:43] [network] Loops allowed for resource `ICELLNET`: False
+[2021-05-02 16:08:43] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:43] [network] New network resource added, current number of nodes: 4725, edges: 18538.
+[2021-05-02 16:08:43] [network] Loop edges discarded: 0
+[2021-05-02 16:08:43] [network] Checking organisms. 4725 nodes and 18538 interactions before.
+[2021-05-02 16:08:43] [network] Finished checking organisms. 0 nodes have been removed, 4725 nodes and 18538 interactions remained.
+[2021-05-02 16:08:43] [network] Removing zero degree nodes. 4725 nodes and 18538 interactions before.
+[2021-05-02 16:08:43] [network] Finished removing zero degree nodes. 0 nodes have been removed, 4725 nodes and 18538 interactions remained.
+[2021-05-02 16:08:43] [network] Completed: loading network data from resource `ICELLNET`.
+[2021-05-02 16:08:43] [network] Loading network data from resource `CellTalkDB`.
+[2021-05-02 16:08:43] [network] Reading network data from `CellTalkDB`.
+[2021-05-02 16:08:43] [network] Expanding complexes for `CellTalkDB`: False
+[2021-05-02 16:08:43] [inputs] Selecting input method (step 1): module `celltalkdb.celltalkdb_interactions`, method `None`.
+[2021-05-02 16:08:43] [inputs] Selecting input method (step 2): module `pypath.inputs.celltalkdb`, method `celltalkdb_interactions`.
+[2021-05-02 16:08:43] [inputs] Importing module `pypath.inputs.celltalkdb`.
+[2021-05-02 16:08:43] [network] Retrieving data by method `celltalkdb_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:43] [curl] Creating Curl object to retrieve data from `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt`
+[2021-05-02 16:08:43] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:08:43] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:43] [curl] Loading data from cache previously downloaded from `ftp.uniprot.org`
+[2021-05-02 16:08:43] [curl] Opening file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:08:43] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:43] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:08:43] [curl] File at `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:08:43] [file] Opening plain text file `/Users/tvarusai/.pypath/cache/celltalkdb_human_lr_pair`.
+[2021-05-02 16:08:43] [network] `CellTalkDB` must have references: True
+[2021-05-02 16:08:43] [network] 3396 lines have been read from celltalkdb.celltalkdb_interactions, 3098 links after mapping; 0 lines filtered by filters; 300 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:43] [network] Loops allowed for resource `CellTalkDB`: False
+[2021-05-02 16:08:43] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:44] [network] New network resource added, current number of nodes: 5213, edges: 20816.
+[2021-05-02 16:08:44] [network] Loop edges discarded: 0
+[2021-05-02 16:08:44] [network] Checking organisms. 5213 nodes and 20816 interactions before.
+[2021-05-02 16:08:44] [network] Finished checking organisms. 0 nodes have been removed, 5213 nodes and 20816 interactions remained.
+[2021-05-02 16:08:44] [network] Removing zero degree nodes. 5213 nodes and 20816 interactions before.
+[2021-05-02 16:08:44] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5213 nodes and 20816 interactions remained.
+[2021-05-02 16:08:44] [network] Completed: loading network data from resource `CellTalkDB`.
+[2021-05-02 16:08:44] [network] Loading network data from resource `CellChatDB`.
+[2021-05-02 16:08:44] [network] Reading network data from `CellChatDB`.
+[2021-05-02 16:08:44] [network] Expanding complexes for `CellChatDB`: False
+[2021-05-02 16:08:44] [inputs] Selecting input method (step 1): module `cellchatdb.cellchatdb_interactions`, method `None`.
+[2021-05-02 16:08:44] [inputs] Selecting input method (step 2): module `pypath.inputs.cellchatdb`, method `cellchatdb_interactions`.
+[2021-05-02 16:08:44] [inputs] Importing module `pypath.inputs.cellchatdb`.
+[2021-05-02 16:08:45] [network] Retrieving data by method `cellchatdb_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:45] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/sqjin/CellChat/master/data/CellChatDB.human.rda`
+[2021-05-02 16:08:45] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/07d4a4294f8a0954cf44ae572db94980-CellChatDB.human.rda`
+[2021-05-02 16:08:45] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:45] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:45] [curl] Opening file `/Users/tvarusai/.pypath/cache/07d4a4294f8a0954cf44ae572db94980-CellChatDB.human.rda`
+[2021-05-02 16:08:45] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:45] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/07d4a4294f8a0954cf44ae572db94980-CellChatDB.human.rda`.
+[2021-05-02 16:08:45] [curl] File at `https://raw.githubusercontent.com/sqjin/CellChat/master/data/CellChatDB.human.rda` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/07d4a4294f8a0954cf44ae572db94980-CellChatDB.human.rda`.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC2194217&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/64e6e84ddf4bcbe7587fab3e5596f169-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/64e6e84ddf4bcbe7587fab3e5596f169-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/64e6e84ddf4bcbe7587fab3e5596f169-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC2194005&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/18f3db1ac25179745ce0bc00ff3b921c-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/18f3db1ac25179745ce0bc00ff3b921c-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/18f3db1ac25179745ce0bc00ff3b921c-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC1237098&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/824dd2a5c704ea34cbe71ee01906b3f1-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/824dd2a5c704ea34cbe71ee01906b3f1-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/824dd2a5c704ea34cbe71ee01906b3f1-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC4571854&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC4571854&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/d37588c6d83dd7fabf7f2be1bc483f06-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=PMC2431087&format=json`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/81fa4e8c8c1bd583ef3cffaf7c631b21-`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/81fa4e8c8c1bd583ef3cffaf7c631b21-`.
+[2021-05-02 16:08:49] [curl] Contents of `/Users/tvarusai/.pypath/cache/81fa4e8c8c1bd583ef3cffaf7c631b21-` has been read and the file has been closed.
+[2021-05-02 16:08:49] [network] `CellChatDB` must have references: True
+[2021-05-02 16:08:49] [network] 11100 lines have been read from cellchatdb.cellchatdb_interactions, 1546 links after mapping; 0 lines filtered by filters; 9556 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:49] [network] Loops allowed for resource `CellChatDB`: False
+[2021-05-02 16:08:49] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:49] [network] New network resource added, current number of nodes: 5307, edges: 21320.
+[2021-05-02 16:08:49] [network] Loop edges discarded: 3
+[2021-05-02 16:08:49] [network] Checking organisms. 5307 nodes and 21320 interactions before.
+[2021-05-02 16:08:49] [network] Finished checking organisms. 0 nodes have been removed, 5307 nodes and 21320 interactions remained.
+[2021-05-02 16:08:49] [network] Removing zero degree nodes. 5307 nodes and 21320 interactions before.
+[2021-05-02 16:08:49] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5307 nodes and 21320 interactions remained.
+[2021-05-02 16:08:49] [network] Completed: loading network data from resource `CellChatDB`.
+[2021-05-02 16:08:49] [network] Loading network data from resource `connectomeDB2020`.
+[2021-05-02 16:08:49] [network] Reading network data from `connectomeDB2020`.
+[2021-05-02 16:08:49] [network] Expanding complexes for `connectomeDB2020`: False
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 1): module `connectomedb.connectomedb_interactions`, method `None`.
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 2): module `pypath.inputs.connectomedb`, method `connectomedb_interactions`.
+[2021-05-02 16:08:49] [inputs] Importing module `pypath.inputs.connectomedb`.
+[2021-05-02 16:08:49] [network] Retrieving data by method `connectomedb_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/asrhou/NATMI/gh-pages/_data/lsps.csv`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/e731509bb3c6aa5a52b9b408eea5cd0e-lsps.csv`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:49] [curl] Opening file `/Users/tvarusai/.pypath/cache/e731509bb3c6aa5a52b9b408eea5cd0e-lsps.csv`
+[2021-05-02 16:08:49] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/e731509bb3c6aa5a52b9b408eea5cd0e-lsps.csv`.
+[2021-05-02 16:08:49] [curl] File at `https://raw.githubusercontent.com/asrhou/NATMI/gh-pages/_data/lsps.csv` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/e731509bb3c6aa5a52b9b408eea5cd0e-lsps.csv`.
+[2021-05-02 16:08:49] [network] `connectomeDB2020` must have references: True
+[2021-05-02 16:08:49] [network] 2291 lines have been read from connectomedb.connectomedb_interactions, 2291 links after mapping; 0 lines filtered by filters; 2 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:49] [network] Loops allowed for resource `connectomeDB2020`: False
+[2021-05-02 16:08:49] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:49] [network] New network resource added, current number of nodes: 5420, edges: 21685.
+[2021-05-02 16:08:49] [network] Loop edges discarded: 21
+[2021-05-02 16:08:49] [network] Checking organisms. 5420 nodes and 21685 interactions before.
+[2021-05-02 16:08:49] [network] Finished checking organisms. 0 nodes have been removed, 5420 nodes and 21685 interactions remained.
+[2021-05-02 16:08:49] [network] Removing zero degree nodes. 5420 nodes and 21685 interactions before.
+[2021-05-02 16:08:49] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5420 nodes and 21685 interactions remained.
+[2021-05-02 16:08:49] [network] Completed: loading network data from resource `connectomeDB2020`.
+[2021-05-02 16:08:49] [network] Loading network data from resource `HPMR`.
+[2021-05-02 16:08:49] [network] Reading network data from `HPMR`.
+[2021-05-02 16:08:49] [network] Expanding complexes for `HPMR`: False
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 1): module `hpmr_interactions`, method `None`.
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `hpmr_interactions`.
+[2021-05-02 16:08:49] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:08:49] [network] Retrieving data by method `hpmr_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:49] [inputs] Reading HPMR data from cache file `/Users/tvarusai/.pypath/cache/hpmr_preprocessed.pickle`.
+[2021-05-02 16:08:49] [network] `HPMR` must have references: True
+[2021-05-02 16:08:49] [network] 617 lines have been read from hpmr_interactions, 572 links after mapping; 0 lines filtered by filters; 47 lines filtered because lack of references; 0 lines filtered by taxon filters.
+[2021-05-02 16:08:49] [network] Loops allowed for resource `HPMR`: False
+[2021-05-02 16:08:49] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:49] [network] New network resource added, current number of nodes: 5426, edges: 21764.
+[2021-05-02 16:08:49] [network] Loop edges discarded: 0
+[2021-05-02 16:08:49] [network] Checking organisms. 5426 nodes and 21764 interactions before.
+[2021-05-02 16:08:49] [network] Finished checking organisms. 0 nodes have been removed, 5426 nodes and 21764 interactions remained.
+[2021-05-02 16:08:49] [network] Removing zero degree nodes. 5426 nodes and 21764 interactions before.
+[2021-05-02 16:08:49] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5426 nodes and 21764 interactions remained.
+[2021-05-02 16:08:49] [network] Completed: loading network data from resource `HPMR`.
+[2021-05-02 16:08:49] [network] Loading network data from resource `CellPhoneDB`.
+[2021-05-02 16:08:49] [network] Reading network data from `CellPhoneDB`.
+[2021-05-02 16:08:49] [network] Expanding complexes for `CellPhoneDB`: False
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 1): module `cellphonedb.cellphonedb_interactions`, method `None`.
+[2021-05-02 16:08:49] [inputs] Selecting input method (step 2): module `pypath.inputs.cellphonedb`, method `cellphonedb_interactions`.
+[2021-05-02 16:08:49] [inputs] Importing module `pypath.inputs.cellphonedb`.
+[2021-05-02 16:08:49] [network] Retrieving data by method `cellphonedb_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:49] [network] `CellPhoneDB` must have references: True
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/protein_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/9668baf2d73dd3c0f46077f58988bbf3-protein_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:49] [curl] Opening file `/Users/tvarusai/.pypath/cache/9668baf2d73dd3c0f46077f58988bbf3-protein_input.csv`
+[2021-05-02 16:08:49] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/9668baf2d73dd3c0f46077f58988bbf3-protein_input.csv`.
+[2021-05-02 16:08:49] [curl] File at `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/protein_input.csv` successfully retrieved. Resulted file type `plain text, file object`. Local
+                      file at `/Users/tvarusai/.pypath/cache/9668baf2d73dd3c0f46077f58988bbf3-protein_input.csv`.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:49] [curl] Opening file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:08:49] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:08:49] [curl] File at `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv` successfully retrieved. Resulted file type `plain text, file object`. Local
+                      file at `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:49] [curl] Opening file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:08:49] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:08:49] [curl] File at `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv` successfully retrieved. Resulted file type `plain text, file object`. Local
+                      file at `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:08:49] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/interaction_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/928a59e8c8cb0e3b26f7ead5e16e2821-interaction_input.csv`
+[2021-05-02 16:08:49] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:49] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:49] [curl] Opening file `/Users/tvarusai/.pypath/cache/928a59e8c8cb0e3b26f7ead5e16e2821-interaction_input.csv`
+[2021-05-02 16:08:49] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:49] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/928a59e8c8cb0e3b26f7ead5e16e2821-interaction_input.csv`.
+[2021-05-02 16:08:49] [curl] File at `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/interaction_input.csv` successfully retrieved. Resulted file type `plain text, file object`.
+                      Local file at `/Users/tvarusai/.pypath/cache/928a59e8c8cb0e3b26f7ead5e16e2821-interaction_input.csv`.
+[2021-05-02 16:08:50] [network] 1394 lines have been read from cellphonedb.cellphonedb_interactions, 360 links after mapping; 0 lines filtered by filters; 1036 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:50] [network] Loops allowed for resource `CellPhoneDB`: False
+[2021-05-02 16:08:50] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:50] [network] New network resource added, current number of nodes: 5431, edges: 21794.
+[2021-05-02 16:08:50] [network] Loop edges discarded: 0
+[2021-05-02 16:08:50] [network] Checking organisms. 5431 nodes and 21794 interactions before.
+[2021-05-02 16:08:50] [network] Finished checking organisms. 0 nodes have been removed, 5431 nodes and 21794 interactions remained.
+[2021-05-02 16:08:50] [network] Removing zero degree nodes. 5431 nodes and 21794 interactions before.
+[2021-05-02 16:08:50] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5431 nodes and 21794 interactions remained.
+[2021-05-02 16:08:50] [network] Completed: loading network data from resource `CellPhoneDB`.
+[2021-05-02 16:08:50] [network] Loading network data from resource `Ramilowski2015`.
+[2021-05-02 16:08:50] [network] Reading network data from `Ramilowski2015`.
+[2021-05-02 16:08:50] [network] Expanding complexes for `Ramilowski2015`: False
+[2021-05-02 16:08:50] [inputs] Selecting input method (step 1): module `ramilowski2015.ramilowski_interactions`, method `None`.
+[2021-05-02 16:08:50] [inputs] Selecting input method (step 2): module `pypath.inputs.ramilowski2015`, method `ramilowski_interactions`.
+[2021-05-02 16:08:50] [inputs] Importing module `pypath.inputs.ramilowski2015`.
+[2021-05-02 16:08:50] [network] Retrieving data by method `ramilowski_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:50] [curl] Creating Curl object to retrieve data from `https://static-content.springer.com/esm/art%3A10.1038%2Fncomms8866/MediaObjects/41467_2015_BFncomms8866_MOESM611_ESM.xlsx`
+[2021-05-02 16:08:50] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/34290c8f3abce18fc540ada24b8c5cb7-41467_2015_BFncomms8866_MOESM611_ESM.xlsx`
+[2021-05-02 16:08:50] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:50] [curl] Loading data from cache previously downloaded from `static-content.springer.com`
+[2021-05-02 16:08:50] [curl] Opening file `/Users/tvarusai/.pypath/cache/34290c8f3abce18fc540ada24b8c5cb7-41467_2015_BFncomms8866_MOESM611_ESM.xlsx`
+[2021-05-02 16:08:50] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:50] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/34290c8f3abce18fc540ada24b8c5cb7-41467_2015_BFncomms8866_MOESM611_ESM.xlsx`.
+[2021-05-02 16:08:50] [curl] File at `https://static-content.springer.com/esm/art%3A10.1038%2Fncomms8866/MediaObjects/41467_2015_BFncomms8866_MOESM611_ESM.xlsx` successfully retrieved. Resulted file type `plain text, file
+                      object`. Local file at `/Users/tvarusai/.pypath/cache/34290c8f3abce18fc540ada24b8c5cb7-41467_2015_BFncomms8866_MOESM611_ESM.xlsx`.
+[2021-05-02 16:08:51] [network] `Ramilowski2015` must have references: True
+[2021-05-02 16:08:51] [network] 1892 lines have been read from ramilowski2015.ramilowski_interactions, 273 links after mapping; 0 lines filtered by filters; 1621 lines filtered because lack of references; 0 lines filtered
+                      by taxon filters.
+[2021-05-02 16:08:51] [network] Loops allowed for resource `Ramilowski2015`: False
+[2021-05-02 16:08:51] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:51] [network] New network resource added, current number of nodes: 5431, edges: 21795.
+[2021-05-02 16:08:51] [network] Loop edges discarded: 0
+[2021-05-02 16:08:51] [network] Checking organisms. 5431 nodes and 21795 interactions before.
+[2021-05-02 16:08:51] [network] Finished checking organisms. 0 nodes have been removed, 5431 nodes and 21795 interactions remained.
+[2021-05-02 16:08:51] [network] Removing zero degree nodes. 5431 nodes and 21795 interactions before.
+[2021-05-02 16:08:51] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5431 nodes and 21795 interactions remained.
+[2021-05-02 16:08:51] [network] Completed: loading network data from resource `Ramilowski2015`.
+[2021-05-02 16:08:51] [network] Loading network data from resource `LRdb`.
+[2021-05-02 16:08:51] [network] Reading network data from `LRdb`.
+[2021-05-02 16:08:51] [network] Expanding complexes for `LRdb`: False
+[2021-05-02 16:08:51] [inputs] Selecting input method (step 1): module `lrdb.lrdb_interactions`, method `None`.
+[2021-05-02 16:08:51] [inputs] Selecting input method (step 2): module `pypath.inputs.lrdb`, method `lrdb_interactions`.
+[2021-05-02 16:08:51] [inputs] Importing module `pypath.inputs.lrdb`.
+[2021-05-02 16:08:51] [network] Retrieving data by method `lrdb_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:51] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/SCA-IRCM/LRdb/master/LRdb_122019.txt`
+[2021-05-02 16:08:51] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/9d6b7d63e1aeeb1289a2fb66b7e16089-LRdb_122019.txt`
+[2021-05-02 16:08:51] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:51] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:08:51] [curl] Opening file `/Users/tvarusai/.pypath/cache/9d6b7d63e1aeeb1289a2fb66b7e16089-LRdb_122019.txt`
+[2021-05-02 16:08:51] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:51] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/9d6b7d63e1aeeb1289a2fb66b7e16089-LRdb_122019.txt`.
+[2021-05-02 16:08:51] [curl] File at `https://raw.githubusercontent.com/SCA-IRCM/LRdb/master/LRdb_122019.txt` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/9d6b7d63e1aeeb1289a2fb66b7e16089-LRdb_122019.txt`.
+[2021-05-02 16:08:51] [network] `LRdb` must have references: True
+[2021-05-02 16:08:51] [network] 3249 lines have been read from lrdb.lrdb_interactions, 2005 links after mapping; 0 lines filtered by filters; 1239 lines filtered because lack of references; 0 lines filtered by taxon
+                      filters.
+[2021-05-02 16:08:51] [network] Loops allowed for resource `LRdb`: False
+[2021-05-02 16:08:51] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:51] [network] New network resource added, current number of nodes: 5447, edges: 21839.
+[2021-05-02 16:08:51] [network] Loop edges discarded: 0
+[2021-05-02 16:08:51] [network] Checking organisms. 5447 nodes and 21839 interactions before.
+[2021-05-02 16:08:51] [network] Finished checking organisms. 0 nodes have been removed, 5447 nodes and 21839 interactions remained.
+[2021-05-02 16:08:51] [network] Removing zero degree nodes. 5447 nodes and 21839 interactions before.
+[2021-05-02 16:08:51] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5447 nodes and 21839 interactions remained.
+[2021-05-02 16:08:51] [network] Completed: loading network data from resource `LRdb`.
+[2021-05-02 16:08:51] [network] Loading network data from resource `Baccin2019`.
+[2021-05-02 16:08:51] [network] Reading network data from `Baccin2019`.
+[2021-05-02 16:08:51] [network] Expanding complexes for `Baccin2019`: False
+[2021-05-02 16:08:51] [inputs] Selecting input method (step 1): module `baccin2019.baccin2019_interactions`, method `None`.
+[2021-05-02 16:08:51] [inputs] Selecting input method (step 2): module `pypath.inputs.baccin2019`, method `baccin2019_interactions`.
+[2021-05-02 16:08:51] [inputs] Importing module `pypath.inputs.baccin2019`.
+[2021-05-02 16:08:51] [network] Retrieving data by method `baccin2019_interactions` of the pypath.inputs module...
+[2021-05-02 16:08:51] [curl] Creating Curl object to retrieve data from `https://static-content.springer.com/esm/art%3A10.1038%2Fs41556-019-0439-6/MediaObjects/41556_2019_439_MOESM3_ESM.xlsx`
+[2021-05-02 16:08:51] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/6c4d79e437706ddcefb21b9f296241eb-41556_2019_439_MOESM3_ESM.xlsx`
+[2021-05-02 16:08:51] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:51] [curl] Loading data from cache previously downloaded from `static-content.springer.com`
+[2021-05-02 16:08:51] [curl] Opening file `/Users/tvarusai/.pypath/cache/6c4d79e437706ddcefb21b9f296241eb-41556_2019_439_MOESM3_ESM.xlsx`
+[2021-05-02 16:08:51] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:51] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/6c4d79e437706ddcefb21b9f296241eb-41556_2019_439_MOESM3_ESM.xlsx`.
+[2021-05-02 16:08:51] [curl] File at `https://static-content.springer.com/esm/art%3A10.1038%2Fs41556-019-0439-6/MediaObjects/41556_2019_439_MOESM3_ESM.xlsx` successfully retrieved. Resulted file type `plain text, file
+                      object`. Local file at `/Users/tvarusai/.pypath/cache/6c4d79e437706ddcefb21b9f296241eb-41556_2019_439_MOESM3_ESM.xlsx`.
+[2021-05-02 16:08:52] [uniprot_input] Loading list of all UniProt IDs for organism `9606` (only SwissProt: yes).
+[2021-05-02 16:08:52] [curl] Creating Curl object to retrieve data from `https://www.uniprot.org/uniprot/`
+[2021-05-02 16:08:52] [curl] GET parameters added to the URL: `query=organism%3A9606+AND+reviewed%3A+yes&format=tab&columns=id`
+[2021-05-02 16:08:52] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/26cf77d50f0ac096c8632dd5b2a64f8f-`
+[2021-05-02 16:08:52] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:52] [curl] Loading data from cache previously downloaded from `www.uniprot.org`
+[2021-05-02 16:08:52] [curl] Opening file `/Users/tvarusai/.pypath/cache/26cf77d50f0ac096c8632dd5b2a64f8f-`
+[2021-05-02 16:08:52] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:52] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/26cf77d50f0ac096c8632dd5b2a64f8f-`.
+[2021-05-02 16:08:52] [curl] Contents of `/Users/tvarusai/.pypath/cache/26cf77d50f0ac096c8632dd5b2a64f8f-` has been read and the file has been closed.
+[2021-05-02 16:08:52] [curl] File at `https://www.uniprot.org/uniprot/?query=organism%3A9606+AND+reviewed%3A+yes&format=tab&columns=id` successfully retrieved. Resulted file type `plain text, unicode string`. Local file at
+                      `/Users/tvarusai/.pypath/cache/26cf77d50f0ac096c8632dd5b2a64f8f-`.
+[2021-05-02 16:08:52] [curl] Creating Curl object to retrieve data from `ftp://ftp.ncbi.nih.gov/pub/HomoloGene/current/homologene.data`
+[2021-05-02 16:08:52] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`
+[2021-05-02 16:08:52] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:52] [curl] Loading data from cache previously downloaded from `ftp.ncbi.nih.gov`
+[2021-05-02 16:08:52] [curl] Opening file `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`
+[2021-05-02 16:08:52] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:52] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`.
+[2021-05-02 16:08:52] [curl] File at `ftp://ftp.ncbi.nih.gov/pub/HomoloGene/current/homologene.data` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`.
+[2021-05-02 16:08:53] [curl] Creating Curl object to retrieve data from `ftp://ftp.ncbi.nih.gov/pub/HomoloGene/current/homologene.data`
+[2021-05-02 16:08:53] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`
+[2021-05-02 16:08:53] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:53] [curl] Loading data from cache previously downloaded from `ftp.ncbi.nih.gov`
+[2021-05-02 16:08:53] [curl] Opening file `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`
+[2021-05-02 16:08:53] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:53] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`.
+[2021-05-02 16:08:53] [curl] File at `ftp://ftp.ncbi.nih.gov/pub/HomoloGene/current/homologene.data` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/6e6a9dce3cf617fdfa58ce73d6a9b51c-homologene.data`.
+[2021-05-02 16:08:53] [uniprot_input] Loading list of all UniProt IDs for organism `10090` (only SwissProt: yes).
+[2021-05-02 16:08:53] [curl] Creating Curl object to retrieve data from `https://www.uniprot.org/uniprot/`
+[2021-05-02 16:08:53] [curl] GET parameters added to the URL: `query=organism%3A10090+AND+reviewed%3A+yes&format=tab&columns=id`
+[2021-05-02 16:08:53] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/a6188cf14a4204fdd1017c22da0eae58-`
+[2021-05-02 16:08:53] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:53] [curl] Loading data from cache previously downloaded from `www.uniprot.org`
+[2021-05-02 16:08:53] [curl] Opening file `/Users/tvarusai/.pypath/cache/a6188cf14a4204fdd1017c22da0eae58-`
+[2021-05-02 16:08:53] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:53] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/a6188cf14a4204fdd1017c22da0eae58-`.
+[2021-05-02 16:08:53] [curl] Contents of `/Users/tvarusai/.pypath/cache/a6188cf14a4204fdd1017c22da0eae58-` has been read and the file has been closed.
+[2021-05-02 16:08:53] [curl] File at `https://www.uniprot.org/uniprot/?query=organism%3A10090+AND+reviewed%3A+yes&format=tab&columns=id` successfully retrieved. Resulted file type `plain text, unicode string`. Local file
+                      at `/Users/tvarusai/.pypath/cache/a6188cf14a4204fdd1017c22da0eae58-`.
+[2021-05-02 16:08:53] [mapping] Loading mapping table for organism `10090` with identifiers `entrez` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:53] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=10090, id_a=entrez, id_b=uniprot, load_a_to_b=0, load_b_to_a=1, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:53] [mapping] Loading `entrez` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/9e8b1f7d11319f7629c8309086abbb50`.
+[2021-05-02 16:08:53] [mapping] `uniprot` to `entrez` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:53] [mapping] Loading mapping table for organism `10090` with identifiers `refseqp` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:53] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=10090, id_a=refseqp, id_b=uniprot, load_a_to_b=0, load_b_to_a=1, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:53] [mapping] Loading `refseqp` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/ec168bc5a8401d644c003959a7526c81`.
+[2021-05-02 16:08:53] [mapping] `uniprot` to `refseqp` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:53] [mapping] Loading mapping table for organism `9606` with identifiers `entrez` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:53] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=entrez, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:53] [mapping] Loading `entrez` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/40b1050c117470835232521cc446c382`.
+[2021-05-02 16:08:53] [mapping] `entrez` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:53] [mapping] Loading mapping table for organism `9606` with identifiers `refseqp` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:53] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=9606, id_a=refseqp, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:53] [mapping] Loading `refseqp` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/12ca8430b29c675b094eaf8313461b4a`.
+[2021-05-02 16:08:53] [mapping] `refseqp` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:57] [mapping] Loading mapping table for organism `10090` with identifiers `genesymbol` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:57] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=10090, id_a=genesymbol, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:57] [mapping] Loading `genesymbol` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/54928d058eb9c7cef8838419f4aacc25`.
+[2021-05-02 16:08:57] [mapping] `genesymbol` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:57] [mapping] Loading mapping table for organism `10090` with identifiers `genesymbol` and `trembl`, input type `uniprot`
+[2021-05-02 16:08:57] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=10090, id_a=genesymbol, id_b=trembl, load_a_to_b=0, load_b_to_a=1, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:57] [mapping] Loading `genesymbol` to `trembl` mapping table from pickle file `/Users/tvarusai/.pypath/cache/08d1e5b71022cef2d92f56cf1a8eac66`.
+[2021-05-02 16:08:57] [mapping] `trembl` to `genesymbol` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:57] [uniprot_input] Loading list of all UniProt IDs for organism `10090` (only SwissProt: None).
+[2021-05-02 16:08:57] [curl] Creating Curl object to retrieve data from `https://www.uniprot.org/uniprot/`
+[2021-05-02 16:08:57] [curl] GET parameters added to the URL: `query=organism%3A10090&format=tab&columns=id`
+[2021-05-02 16:08:57] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/ff4138ccbd47df61478fc85c5f1aa698-`
+[2021-05-02 16:08:57] [curl] Cache file found, no need for download.
+[2021-05-02 16:08:57] [curl] Loading data from cache previously downloaded from `www.uniprot.org`
+[2021-05-02 16:08:57] [curl] Opening file `/Users/tvarusai/.pypath/cache/ff4138ccbd47df61478fc85c5f1aa698-`
+[2021-05-02 16:08:57] [curl] Extracting data from file type `plain`
+[2021-05-02 16:08:57] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/ff4138ccbd47df61478fc85c5f1aa698-`.
+[2021-05-02 16:08:57] [curl] Contents of `/Users/tvarusai/.pypath/cache/ff4138ccbd47df61478fc85c5f1aa698-` has been read and the file has been closed.
+[2021-05-02 16:08:57] [curl] File at `https://www.uniprot.org/uniprot/?query=organism%3A10090&format=tab&columns=id` successfully retrieved. Resulted file type `plain text, unicode string`. Local file at
+                      `/Users/tvarusai/.pypath/cache/ff4138ccbd47df61478fc85c5f1aa698-`.
+[2021-05-02 16:08:57] [mapping] Loading mapping table for organism `10090` with identifiers `genesymbol-syn` and `uniprot`, input type `uniprot`
+[2021-05-02 16:08:57] [mapping] Reader created for ID translation table, parameters: `ncbi_tax_id=10090, id_a=genesymbol-syn, id_b=uniprot, load_a_to_b=1, load_b_to_a=0, input_type=uniprot (UniprotMapping)`.
+[2021-05-02 16:08:57] [mapping] Loading `genesymbol-syn` to `uniprot` mapping table from pickle file `/Users/tvarusai/.pypath/cache/7f6a2cdf20ca66ac8428d814224858fb`.
+[2021-05-02 16:08:57] [mapping] `genesymbol-syn` to `uniprot` mapping table for organism `9606` successfully loaded.
+[2021-05-02 16:08:57] [network] `Baccin2019` must have references: True
+[2021-05-02 16:08:57] [network] 1453 lines have been read from baccin2019.baccin2019_interactions, 1195 links after mapping; 0 lines filtered by filters; 260 lines filtered because lack of references; 0 lines filtered by
+                      taxon filters.
+[2021-05-02 16:08:57] [network] Loops allowed for resource `Baccin2019`: False
+[2021-05-02 16:08:57] [network] Adding preprocessed edge list to existing network.
+[2021-05-02 16:08:57] [network] New network resource added, current number of nodes: 5451, edges: 21908.
+[2021-05-02 16:08:57] [network] Loop edges discarded: 20
+[2021-05-02 16:08:57] [network] Checking organisms. 5451 nodes and 21908 interactions before.
+[2021-05-02 16:08:57] [network] Finished checking organisms. 0 nodes have been removed, 5451 nodes and 21908 interactions remained.
+[2021-05-02 16:08:57] [network] Removing zero degree nodes. 5451 nodes and 21908 interactions before.
+[2021-05-02 16:08:57] [network] Finished removing zero degree nodes. 0 nodes have been removed, 5451 nodes and 21908 interactions remained.
+[2021-05-02 16:08:57] [network] Completed: loading network data from resource `Baccin2019`.
+[2021-05-02 16:08:57] [network] Creating interactions data frame.
+[2021-05-02 16:09:00] [network] Interaction data frame ready. Memory usage: 11.1+ MB
+[2021-05-02 16:09:00] [annot] Loading annotations from `TFcensus`.
+[2021-05-02 16:09:00] [complex] Loading resource `Signor`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 1): module `signor.signor_complexes`, method `None`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 2): module `pypath.inputs.signor`, method `signor_complexes`.
+[2021-05-02 16:09:00] [inputs] Importing module `pypath.inputs.signor`.
+[2021-05-02 16:09:00] [complex] Loading data from `SIGNOR`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 1): module `signor.signor_complexes`, method `None`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 2): module `pypath.inputs.signor`, method `signor_complexes`.
+[2021-05-02 16:09:00] [inputs] Importing module `pypath.inputs.signor`.
+[2021-05-02 16:09:00] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_complexes.php`
+[2021-05-02 16:09:00] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`
+[2021-05-02 16:09:00] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:00] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/d7b8673e83e43a01c533f9de5a2b04b9-download_complexes.php`.
+[2021-05-02 16:09:00] [curl] Creating Curl object to retrieve data from `https://signor.uniroma2.it/download_complexes.php`
+[2021-05-02 16:09:00] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/33cb899246ae216a12acaf98e1c5653c-download_complexes.php`
+[2021-05-02 16:09:00] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:00] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/33cb899246ae216a12acaf98e1c5653c-download_complexes.php`.
+[2021-05-02 16:09:00] [complex] Processing data from `SIGNOR`.
+[2021-05-02 16:09:00] [complex] Loading resource `Corum`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 1): module `corum_complexes`, method `None`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `corum_complexes`.
+[2021-05-02 16:09:00] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:00] [complex] Loading data from `CORUM`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 1): module `corum_complexes`, method `None`.
+[2021-05-02 16:09:00] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `corum_complexes`.
+[2021-05-02 16:09:00] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:00] [curl] Creating Curl object to retrieve data from `http://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip`
+[2021-05-02 16:09:00] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/511e8c533cb0e44cb1e7ef10cb396447-allComplexes.txt.zip`
+[2021-05-02 16:09:00] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:00] [curl] Loading data from cache previously downloaded from `mips.helmholtz-muenchen.de`
+[2021-05-02 16:09:00] [curl] Opening file `/Users/tvarusai/.pypath/cache/511e8c533cb0e44cb1e7ef10cb396447-allComplexes.txt.zip`
+[2021-05-02 16:09:00] [curl] Extracting data from file type `zip`
+[2021-05-02 16:09:00] [curl] Opening zip file `/Users/tvarusai/.pypath/cache/511e8c533cb0e44cb1e7ef10cb396447-allComplexes.txt.zip`.
+[2021-05-02 16:09:00] [curl] File at `http://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip` successfully retrieved. Resulted file type `zip extracted data, dict of file objects`. Local file at
+                      `/Users/tvarusai/.pypath/cache/511e8c533cb0e44cb1e7ef10cb396447-allComplexes.txt.zip`.
+[2021-05-02 16:09:00] [curl] Creating Curl object to retrieve data from `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt`
+[2021-05-02 16:09:00] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:09:00] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:00] [curl] Loading data from cache previously downloaded from `ftp.uniprot.org`
+[2021-05-02 16:09:00] [curl] Opening file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`
+[2021-05-02 16:09:00] [curl] Extracting data from file type `plain`
+[2021-05-02 16:09:00] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:09:00] [curl] File at `ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/speclist.txt` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/1185fe8b5693dbb9cc659906acc8c285-speclist.txt`.
+[2021-05-02 16:09:01] [taxonomy] Could not map to NCBI Taxonomy ID: `MINK`.
+[2021-05-02 16:09:01] [complex] Processing data from `CORUM`.
+[2021-05-02 16:09:01] [complex] Loading resource `CellPhoneDB`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `cellphonedb.cellphonedb_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.cellphonedb`, method `cellphonedb_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.cellphonedb`.
+[2021-05-02 16:09:01] [complex] Loading data from `CellPhoneDB`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `cellphonedb.cellphonedb_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.cellphonedb`, method `cellphonedb_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.cellphonedb`.
+[2021-05-02 16:09:01] [curl] Creating Curl object to retrieve data from `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv`
+[2021-05-02 16:09:01] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:09:01] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:01] [curl] Loading data from cache previously downloaded from `raw.githubusercontent.com`
+[2021-05-02 16:09:01] [curl] Opening file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`
+[2021-05-02 16:09:01] [curl] Extracting data from file type `plain`
+[2021-05-02 16:09:01] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:09:01] [curl] File at `https://raw.githubusercontent.com/Teichlab/cellphonedb/master/cellphonedb/src/core/data/complex_input.csv` successfully retrieved. Resulted file type `plain text, file object`. Local
+                      file at `/Users/tvarusai/.pypath/cache/b314f79e11b4107d27757fea07789442-complex_input.csv`.
+[2021-05-02 16:09:01] [complex] Processing data from `CellPhoneDB`.
+[2021-05-02 16:09:01] [complex] Loading resource `Havugimana`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `havugimana_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `havugimana_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [complex] Loading data from `Havugimana2012`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `havugimana_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `havugimana_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [curl] Creating Curl object to retrieve data from `http://www.cell.com/cms/attachment/2021768736/2041631145/mmc3.xls`
+[2021-05-02 16:09:01] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/53cfef5c64295838815eff7c5e2a3fef-mmc3.xls`
+[2021-05-02 16:09:01] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:01] [curl] Loading data from cache previously downloaded from `www.cell.com`
+[2021-05-02 16:09:01] [curl] Opening file `/Users/tvarusai/.pypath/cache/53cfef5c64295838815eff7c5e2a3fef-mmc3.xls`
+[2021-05-02 16:09:01] [curl] Extracting data from file type `plain`
+[2021-05-02 16:09:01] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/53cfef5c64295838815eff7c5e2a3fef-mmc3.xls`.
+[2021-05-02 16:09:01] [curl] File at `http://www.cell.com/cms/attachment/2021768736/2041631145/mmc3.xls` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/53cfef5c64295838815eff7c5e2a3fef-mmc3.xls`.
+[2021-05-02 16:09:01] [complex] Failed to load resource `<class 'pypath.core.complex.Havugimana'>`: ['Traceback (most recent call last):\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-
+                      packages/pypath/inputs/common.py", line 99, in read_xls\n    book = openpyxl.load_workbook(\n', "TypeError: load_workbook() got an unexpected keyword argument 'on_demand'\n",
+                      '\nDuring handling of the above exception, another exception occurred:\n\n', 'Traceback (most recent call last):\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-
+                      packages/pypath/core/complex.py", line 593, in load\n    processor = res()\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/core/complex.py", line
+                      370, in __init__\n    AbstractComplexResource.__init__(\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/core/complex.py", line 104, in __init__\n
+                      self.load()\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/core/complex.py", line 109, in load\n    resource.AbstractResource.load(self)\n', '
+                      File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/internals/resource.py", line 81, in load\n    self.load_data()\n', '  File
+                      "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/internals/resource.py", line 115, in load_data\n    self.data = self.input_method(**self.input_args)\n', '  File
+                      "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/inputs/main.py", line 465, in havugimana_complexes\n    for rec in get_havugimana():\n', '  File
+                      "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/inputs/main.py", line 451, in get_havugimana\n    table = inputs_common.read_xls(fname)\n', '  File
+                      "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-packages/pypath/inputs/common.py", line 107, in read_xls\n    raise ValueError(\'Could not open xls: %s\' % xls_file)\n',
+                      'ValueError: Could not open xls: /Users/tvarusai/.pypath/cache/53cfef5c64295838815eff7c5e2a3fef-mmc3.xls\n']
+[2021-05-02 16:09:01] [complex] Loading resource `Compleat`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `compleat_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `compleat_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [complex] Loading data from `Compleat`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `compleat_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `compleat_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [curl] Creating Curl object to retrieve data from `http://www.flyrnai.org/compleat/ComplexDownload?requestType=complexDownload&org=Human`
+[2021-05-02 16:09:01] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/ce3d4734f862e8fb70a8e34c084e0eff-ComplexDownload`
+[2021-05-02 16:09:01] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:01] [curl] Loading data from cache previously downloaded from `www.flyrnai.org`
+[2021-05-02 16:09:01] [curl] Opening file `/Users/tvarusai/.pypath/cache/ce3d4734f862e8fb70a8e34c084e0eff-ComplexDownload`
+[2021-05-02 16:09:01] [curl] Extracting data from file type `plain`
+[2021-05-02 16:09:01] [curl] Opening plain text file `/Users/tvarusai/.pypath/cache/ce3d4734f862e8fb70a8e34c084e0eff-ComplexDownload`.
+[2021-05-02 16:09:01] [curl] File at `http://www.flyrnai.org/compleat/ComplexDownload?requestType=complexDownload&org=Human` successfully retrieved. Resulted file type `plain text, file object`. Local file at
+                      `/Users/tvarusai/.pypath/cache/ce3d4734f862e8fb70a8e34c084e0eff-ComplexDownload`.
+[2021-05-02 16:09:01] [complex] Processing data from `Compleat`.
+[2021-05-02 16:09:01] [complex] Failed to load resource `<class 'pypath.core.complex.Compleat'>`: ['Traceback (most recent call last):\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-
+                      packages/pypath/core/complex.py", line 599, in load\n    if hasattr(processor, \'summary\'):\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-
+                      packages/pypath/core/complex.py", line 297, in summary\n    \'n_references\': self.numof_references,\n', '  File "/Users/tvarusai/opt/anaconda3/lib/python3.8/site-
+                      packages/pypath/core/complex.py", line 186, in numof_references\n    set.union(*(\n', "TypeError: descriptor 'union' of 'set' object needs an argument\n"]
+[2021-05-02 16:09:01] [complex] Loading resource `ComplexPortal`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `complexportal_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `complexportal_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [complex] Loading data from `ComplexPortal`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 1): module `complexportal_complexes`, method `None`.
+[2021-05-02 16:09:01] [inputs] Selecting input method (step 2): module `pypath.inputs.main`, method `complexportal_complexes`.
+[2021-05-02 16:09:01] [inputs] Importing module `pypath.inputs.main`.
+[2021-05-02 16:09:01] [curl] Creating Curl object to retrieve data from `ftp://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25//Homo_sapiens.zip`
+[2021-05-02 16:09:01] [curl] Cache file path: `/Users/tvarusai/.pypath/cache/f37155a1903078612c2575bb438fc0b6-Homo_sapiens.zip`
+[2021-05-02 16:09:01] [curl] Cache file found, no need for download.
+[2021-05-02 16:09:01] [curl] Loading data from cache previously downloaded from `ftp.ebi.ac.uk`
+[2021-05-02 16:09:01] [curl] Opening file `/Users/tvarusai/.pypath/cache/f37155a1903078612c2575bb438fc0b6-Homo_sapiens.zip`
+[2021-05-02 16:09:01] [curl] Extracting data from file type `zip`
+[2021-05-02 16:09:01] [curl] Opening zip file `/Users/tvarusai/.pypath/cache/f37155a1903078612c2575bb438fc0b6-Homo_sapiens.zip`.
+[2021-05-02 16:09:01] [curl] File at `ftp://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25//Homo_sapiens.zip` successfully retrieved. Resulted file type `zip extracted data, dict of file objects`. Local file at
+                      `/Users/tvarusai/.pypath/cache/f37155a1903078612c2575bb438fc0b6-Homo_sapiens.zip`.

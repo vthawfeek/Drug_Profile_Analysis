@@ -1,0 +1,95 @@
+---
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r}
+update.packages(ask = FALSE)
+```
+
+
+
+```{r}
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("igraph")
+install.packages("ggraph")
+install.packages("BiocManager")
+BiocManager::install("OmnipathR")
+BiocManager::install(version='devel')
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(OmnipathR)
+library(igraph)
+library(ggraph)
+```
+
+
+```{r}
+# Download protein-protein interactions
+interactions = import_omnipath_interactions() %>% as_tibble()
+# Convert to igraph objects:
+OPI_g = interaction_graph(interactions = interactions )
+```
+
+```{r}
+# drug_targets <- tibble(drug_name = c("Cisplatin"), in_OP = c(TRUE),  gene_name = c("TP53","CDKN1A","NFKB1")) 
+drug_targets <- tibble(drug_name = c("Cisplatin"), in_OP = c(TRUE),  gene_name = c("A2M")) 
+```
+
+
+
+```{r}
+POI = tibble(protein = c("NFE2L2","HMOX1","TP53","CDKN1A","BTG2","NFKB1","ICAM1","HSPA5", "ATF4","DDIT3","XBP1"))
+#POI = tibble(protein = c("TP53"))
+
+#install.packages('curl')
+#TF_Interaction <- import_dorothea_interactions(resources=c("DoRothEA_A", "ARACNe-GTEx_DoRothEA"), organism=9606)
+#POI = tibble(protein = TF_Interaction$source_genesymbol)
+
+POI <- POI %>% mutate(in_OP = protein %in% interactions$target_genesymbol)
+# all POI is in Omnipath
+print(all(POI$in_OP))
+```
+
+```{r}
+source_nodes <- drug_targets %>% filter(in_OP, drug_name=="Cisplatin") %>% pull(gene_name)
+target_nodes <- POI %>% filter(in_OP) %>% pull(protein)
+
+collected_path_nodes = list()
+
+for(i_source in 1:length(source_nodes)){
+   
+   paths <- shortest_paths(OPI_g, from = source_nodes[[i_source]],
+                           to = target_nodes,
+                           output = 'vpath')
+   path_nodes <- lapply(paths$vpath,names) %>% unlist() %>% unique()
+   collected_path_nodes[[i_source]] <- path_nodes
+}
+collected_path_nodes <- unlist(collected_path_nodes) %>% unique()
+```
+
+
+```{r}
+cisplatin_nodes <- c(source_nodes,target_nodes, collected_path_nodes) %>% unique()
+cisplatin_network <- induced_subgraph(graph = OPI_g,vids = cisplatin_nodes)  
+```
+
+
+```{r}
+V(cisplatin_network)$node_type = ifelse(V(cisplatin_network)$name %in% source_nodes, "direct drug target",
+                                   ifelse(V(cisplatin_network)$name %in% target_nodes, "POI","intermediate node"))
+
+ggraph(cisplatin_network,layout = "lgl") + 
+    geom_edge_link(aes(start_cap = label_rect(node1.name),
+                       end_cap = label_rect(node2.name)), 
+                   arrow = arrow(length = unit(4, 'mm'))) + 
+   geom_node_point() +
+   geom_node_label(aes(label=name,color=node_type)) +
+   theme_bw() + xlab("") + ylab("") + ggtitle("Cisplatin induced network")
+```
+
